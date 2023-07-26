@@ -1,0 +1,93 @@
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  padding: 20px;
+}
+footer .footer-container {
+  width: 100%;
+  max-width: 950px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 0 auto;
+}
+/* logo */
+footer .logo {
+  width: 100px;
+  height: 100px;
+}
+footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+/* logo */
+/* list containers */
+footer .list-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+footer .to-questions {
+  width: 185px;
+}
+footer .company {
+  width: 120px;
+}
+footer .list-container:not(:last-child) {
+  margin-right: 50px;
+}
+footer .list-container .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: rgb(226, 226, 226);
+}
+
+footer .list-container .footer-list .footer-item {
+  margin: 10px 0;
+}
+footer .list-container .footer-list .footer-item a {
+  color: rgb(176, 176, 176);
+}
+
+footer .social {
+  width: calc(100% - 120px - 185px - 100px - 100px);
+  justify-content: space-between;
+}
+footer .social .top .social-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social .top li:hover a {
+  color: #f7931a;
+}
+footer .social .top a {
+  color: rgb(226, 226, 226);
+  transition: color 0.3s;
+}
+footer .social .bottom {
+  text-align: center;
+}
+/* list containers */
+@media screen and (max-width: 850px) {
+  footer {
+    height: fit-content;
+  }
+  footer .footer-container {
+    flex-direction: column;
+  }
+  footer .social {
+    width: 100%;
+    max-width: 377px;
+    justify-content: space-between;
+  }
+  footer .social .top {
+    margin-bottom: 20px;
+  }
+  footer .social .top .social-list {
+    justify-content: space-between;
+  }
+}

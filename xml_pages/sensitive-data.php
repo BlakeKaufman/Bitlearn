@@ -1,0 +1,12 @@
+<?php
+
+
+$athorization = "E984048233F1930280F831E51CEF767F88CCD937FA0C89290D105A51C085B3C3";
+
+echo $athorization;
+
+
+
+
+
+?>

@@ -1,0 +1,328 @@
+main {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+/* clickd question */
+
+main .clicked-question {
+  width: 95%;
+  max-width: 1500px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+main .clicked-question .title {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+main .clicked-question .description {
+  font-size: 20px;
+}
+
+/* if there was not a post  */
+
+main .clicked-question .no-post-found-BTN {
+  width: max-content;
+  padding: 15px 20px;
+  margin-top: 20px;
+  background-color: #ffa538;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgb(170, 170, 170);
+}
+/* comments section */
+
+main .comments-container {
+  width: 95%;
+  max-width: 1500px;
+  height: 400px;
+  overflow-y: scroll;
+  margin: 0 auto 50px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+main .comments-container .all-comments {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+main .comments-container .all-comments .comment-post {
+  width: max-content;
+  max-width: 100%;
+  min-width: 100px;
+  height: fit-content;
+
+  border: 1px solid rgb(196, 196, 196);
+  box-shadow: 0 0 10px 0 rgb(196, 196, 196);
+
+  border-radius: 10px;
+
+  padding: 20px;
+  margin: 20px auto;
+}
+main .comments-container .all-comments .comment-post span {
+  font-size: 20px;
+  cursor: pointer;
+}
+main .comments-container .all-comments .comment-post .commnent-icon {
+  width: 100%;
+  max-width: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+}
+main .comments-container .all-comments .comment-post .screen {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+main .comments-container .all-comments .comment-post .commnent-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+/* no post found styling */
+main .comments-container .all-comments .no-post-found {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+main .comments-container .all-comments .no-post-found span {
+  font-size: 35px;
+  text-align: center;
+}
+
+/* form section */
+
+main .add-comment {
+  width: 95%;
+  max-width: 1000px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  margin: 50px auto;
+}
+main .add-comment span {
+  font-size: 20px;
+}
+main .add-comment textarea {
+  resize: none;
+  border: 1px solid rgb(196, 196, 196);
+  box-shadow: 0 0 5px 0 rgb(196, 196, 196);
+  border-radius: 10px;
+  margin: 10px 0 20px;
+  padding: 20px;
+}
+main .add-comment .char-limit {
+  width: 100%;
+  text-align: right;
+  font-size: 18px;
+}
+main .add-comment .submit-form-BTN-span {
+  width: max-content;
+  padding: 15px 20px;
+  background-color: #ffa538;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+/* adding form check */
+main .over-char-limit-input {
+  border: 1px solid red;
+  color: red;
+}
+main .over-char-limit-span {
+  color: red;
+}
+
+/* ////////// */
+
+/* popup for commenting */
+.popup-container {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: none;
+  justify-content: center;
+  overflow-y: scroll;
+
+  position: absolute;
+  top: 85px;
+  left: 50%;
+
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.comment-on-comment-popup {
+  width: 95%;
+  max-width: 1000px;
+  height: fit-content;
+  min-height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #f7931a;
+  box-shadow: 0 0 10px 0 rgb(207, 207, 207);
+  border-radius: 20px;
+
+  padding: 20px;
+}
+/* top styling for original comment */
+.comment-on-comment-popup .original-comment-section {
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.comment-on-comment-popup .original-comment-section span:first-child {
+  font-size: 20px;
+}
+
+.comment-on-comment-popup .original-comment-section span:last-child {
+  width: 95%;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.comment-on-comment-popup .original-comment-section .backBTN {
+  height: 50px;
+  width: 50px;
+  border-bottom: 10px;
+  cursor: pointer;
+}
+.comment-on-comment-popup .original-comment-section .closeIMG {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+/* top styling for original comment */
+.comment-on-comment-popup .comments-scroll-container {
+  width: 100%;
+  height: 370px;
+  overflow-y: scroll;
+}
+
+.comment-on-comment-popup .comments .sub-comment-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.comment-on-comment-popup .comments {
+  width: max-content;
+  max-width: 100%;
+  min-width: 100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px auto;
+
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.comment-on-comment-popup .comments .sub-comment {
+  font-size: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.comment-on-comment-popup .comments .commnent-icon {
+  height: fit-content;
+  width: 100%;
+  max-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.comment-on-comment-popup .comments img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* form stying */
+
+.comment-on-comment-popup form {
+  height: 300px;
+  width: 100%;
+
+  font-size: 20px;
+
+  background: white;
+
+  padding: 20px;
+  margin: 20px auto;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-on-comment-popup form .reply {
+  margin-bottom: auto;
+  font-size: 20px;
+}
+
+.comment-on-comment-popup form textarea {
+  width: 100%;
+  height: 140px;
+  border: 1px solid rgb(138, 138, 138);
+  box-shadow: 0 0 10px 0 rgb(138, 138, 138);
+  border-radius: 15px;
+  padding: 20px;
+  resize: none;
+}
+.comment-on-comment-popup form .submit-form-BTN-span {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .popup-container {
+    height: 100vh;
+    top: 70px;
+    left: 0;
+    transform: translateX(0);
+  }
+  .comment-on-comment-popup {
+    width: 100%;
+    box-shadow: unset;
+    border-radius: unset;
+    padding-bottom: 150px;
+  }
+}

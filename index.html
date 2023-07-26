@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="A bitcoin education wesbite" />
+    <meta name="keywords" content="bitcoin, BTC, education, learning" />
+    <meta name="author" content="Blake Kaufman" />
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+
+    <link rel="stylesheet" href="./assets/css/hompage.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/bitconEducationLogo.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <title>Bitlearn</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container-desktop">
+        <a href="index.html"
+          ><div class="logo">
+            <img src="./assets/images/bitconEducationLogo.png" alt="Bitlearn" />
+          </div>
+        </a>
+        <ul class="navbar-links">
+          <li>
+            <!-- ///////////////// -->
+            <div class="nav-dropdown">
+              <div class="nav-dropdown">
+                <span> Resources </span>
+                <img
+                  src="./assets/images/arrow-down-short.svg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <!-- ///////////////// -->
+              <div class="dropdown-content">
+                <div class="content">
+                  <div class="left">
+                    <span class="title">Reasorces</span>
+                    <div class="resorce-container">
+                      <!-- ////////// -->
+                      <a
+                        href="./resource-page.php?resource=bitcoin-mining"
+                        class="reasorce"
+                      >
+                        <span class="reasorce-title">Bitcoin Mining</span>
+                        <span class="reasorce-description"
+                          >View all reasorces positioned around bitcoin
+                          mining</span
+                        >
+                      </a>
+                      <!-- //////////// -->
+                      <!-- ////////// -->
+                      <a
+                        href="./resource-page.php?resource=economics"
+                        class="reasorce"
+                      >
+                        <span class="reasorce-title">Economics</span>
+                        <span class="reasorce-description"
+                          >View all reasorces positioned around the economics of
+                          bitcoin</span
+                        >
+                      </a>
+                      <!-- //////////// -->
+                      <!-- ////////// -->
+                      <a
+                        href="./resource-page.php?resource=philosophy"
+                        class="reasorce"
+                      >
+                        <span class="reasorce-title">Philosophy</span>
+                        <span class="reasorce-description"
+                          >View all reasorces positioned around the philosophy
+                          of bitcoin</span
+                        >
+                      </a>
+                      <!-- //////////// -->
+                      <!-- ////////// -->
+                      <a
+                        href="./resource-page.php?resource=new-innovations"
+                        class="reasorce"
+                      >
+                        <span class="reasorce-title">New Innovations</span>
+                        <span class="reasorce-description"
+                          >View all reasorces highlighting new innovations</span
+                        >
+                      </a>
+                      <!-- //////////// -->
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="right-container">
+                      <span>All Reasorces</span>
+                      <img
+                        src="./assets/images/resources.png"
+                        alt="icon for reasource page"
+                        srcset=""
+                      />
+                      <span class="description"
+                        >View all of our reasorces today!</span
+                      >
+                      <a href="./all-resource-page.html">View Reasorces</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <li>Bitcoin Mining</li>
+                  <li>Economics</li>
+                  <li>Philosophy</li>
+                  <li>Applications</li> -->
+                <!-- ///////////////// -->
+              </div>
+            </div>
+            <!-- ///////////////// -->
+          </li>
+          <!-- dropdown for courses, books, podcasts, twitter followers, etc -->
+          <li><a href="./under-construction.html">Pricing</a></li>
+          <li><a href="./fourm-page.php">Fourm</a></li>
+          <!-- custom content that we put out -->
+          <!-- <li><a href="./under-construction.html">Community</a></li> -->
+          <!-- Q and A section for users -->
+          <li><a href="./news-page.html">Current News</a></li>
+        </ul>
+      </div>
+      <div class="nav-container-mobile">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="./assets/images/bitconEducationLogo.png" alt="Bitlearn"
+          /></a>
+        </div>
+        <div class="login-signup">
+          <img
+            class="dropdown-BTN"
+            src="./assets/images/list.svg"
+            alt=""
+            srcset=""
+          />
+          <!-- hamburger menu -->
+        </div>
+      </div>
+      <!-- mobile nav dropdown -->
+      <div class="mobile-nav-dropdown">
+        <ul class="navbar-links">
+          <li><a href="./all-resorces-page.html">Reasorces</a></li>
+          <!-- dropdown for courses, books, podcasts, twitter followers, etc -->
+          <li><a href="./under-construction.html">Pricing</a></li>
+          <li><a href="./fourm-page.php">Fourm</a></li>
+          <!-- custom content that we put out -->
+          <!-- <li><a href="./under-construction.html">Community</a></li> -->
+          <li><a href="./news-page.html">Current News</a></li>
+          <!-- Q and A section for users -->
+        </ul>
+      </div>
+      <div class="bitcoin-stats">
+        <ul class="stats-container">
+          <li class="price">
+            Price: <span class="info-container">754703</span>
+          </li>
+          <li class="percentChange">
+            24hr price change: <span class="info-container">754703</span>
+          </li>
+          <li class="market-cap">
+            Market Cap: <span class="info-container">754703</span>
+          </li>
+          <li class="volume">
+            Volume: <span class="info-container">754703</span>
+          </li>
+          <li class="blockheight">
+            Block Height: <span class="info-container">754703</span>
+          </li>
+          <li class="difficulty">
+            Difficulty: <span class="info-container">48.71T</span>
+          </li>
+          <li class="hashrate">
+            Hash Rate: <span class="info-container">43.64E/H</span>
+          </li>
+          <li class="nodecount">
+            Node Count: <span class="info-container">15,000</span>
+          </li>
+          <!-- <li class="lasthash">
+            Last Hash:
+            <span class="info-container">
+              0000000000000000000624d76f52661d0f35a0da8b93a87cb93cf08fd9140209</span
+            >
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="main-content">
+        <h1>
+          Your Learning. Your Expirence. Your Community. Build Them On Bitlearn
+        </h1>
+        <p>
+          Join the Bitcoin Revolution with Our Ultimate Resource for Learning,
+          Communicating, and Growing Your Community.
+        </p>
+        <!-- <button class="CTA-btn-main-content">Create Your Free Account</button> -->
+
+        <!-- background Image -->
+        <img
+          class="main-content-back"
+          src="./assets/images/home-chart-desktop.svg"
+          alt=""
+          srcset=""
+        />
+      </section>
+      <!-- ////////////// -->
+
+      <section class="our-services">
+        <div class="main-text">
+          <h1>
+            Learning about bitcoin can be tough. Leave the gathering of
+            information to us, to make your jouney eaiser.
+          </h1>
+          <p>
+            You should not have to spend your time finding out what to reaserch,
+            who to listen to, or what to belive. [Company Name] puts together
+            curated information to eliviate the joney to understanding bitcoin.
+          </p>
+        </div>
+        <!-- showing our services off -->
+
+        <div class="services">
+          <!-- first container-->
+          <div class="service-container">
+            <div class="text">
+              <span class="service-kind">Resorces</span>
+              <span class="service-title"
+                >Easily learn about bitcoin though our wide variety of
+                articles</span
+              >
+              <span class="service-description"
+                >Get started in minutes. Bitlearn handles all the information
+                consolidation, just click and article and you're good to
+                go!</span
+              >
+              <!-- ////////// -->
+              <div class="service-info-drop">
+                <div class="drop-info-container">
+                  <!-- ///////////// -->
+                  <div class="drop-info">
+                    <div class="title">
+                      <span> Who writes the articles? </span
+                      ><img
+                        src="./assets/images/plus-lg.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <span class="content"
+                      >Anyone! To prevent agaist spam there is a $5 fee to put
+                      your article on our page. But, if you have something to
+                      add to the conversation anyone is welcome to join.</span
+                    >
+                    <div class="screen"></div>
+                  </div>
+                  <!-- //////////// -->
+                  <div class="drop-info">
+                    <div class="title">
+                      <span> Where can I find the articels? </span
+                      ><img
+                        src="./assets/images/plus-lg.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <span class="content"
+                      >Go to the resorce text in the nav bar, hover over to see
+                      the dropdown and click which topic you want to learn more
+                      about.</span
+                    >
+                    <div class="screen"></div>
+                  </div>
+                  <!-- //////////// -->
+                  <div class="drop-info">
+                    <div class="title">
+                      <span>How can I write an article? </span
+                      ><img
+                        src="./assets/images/plus-lg.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <span class="content"
+                      >Go to the resource dropdown in the nav. Then, either
+                      click one of the resources on the left or all resources on
+                      the right. After you click one of the options you should
+                      see a button that says "add resource" and your're good to
+                      go!</span
+                    >
+                    <div class="screen"></div>
+                  </div>
+                  <!-- //////////// -->
+                </div>
+              </div>
+              <!-- //////////// -->
+              <a href="./all-resource-page.html" class="see-more-BTN">
+                <span>Let's Learn</span>
+                <img src="./assets/images/arrow-right-short.svg" alt=""
+              /></a>
+            </div>
+
+            <div class="img">
+              <img
+                src="./assets/images/articelsVectorImage.jpeg"
+                alt="Image of an article to give perspective on what this section is about"
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <!-- first container-->
+          <!-- second container-->
+          <div class="service-container">
+            <div class="text">
+              <span class="service-kind">Forum</span>
+              <span class="service-title"
+                >Join the conversation by posting comments and questions.</span
+              >
+              <span class="service-description"
+                >All you have to do is fill out the form, pay the lightning
+                invioce, and your post is on the internet!</span
+              >
+              <!-- ////////// -->
+              <div class="service-info-drop">
+                <div class="drop-info-container">
+                  <!-- ///////////// -->
+                  <div class="drop-info">
+                    <div class="title">
+                      <span> Why is a payment required? </span
+                      ><img
+                        src="./assets/images/plus-lg.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <span class="content"
+                      >In order to help stop the ability for large bot attacks
+                      and to varify you are a person, we are using micropayments
+                      over the lightning network.</span
+                    >
+                    <div class="screen"></div>
+                  </div>
+                  <!-- //////////// -->
+                  <div class="drop-info">
+                    <div class="title">
+                      <span> Can I see when people comment on my post </span
+                      ><img
+                        src="./assets/images/plus-lg.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <span class="content"
+                      >Since we are not collecting any user information you are
+                      not able to tell if someone comments on your post.
+                    </span>
+                    <div class="screen"></div>
+                  </div>
+                  <!-- //////////// -->
+                  <div class="drop-info">
+                    <div class="title">
+                      <span> What is the currency being used? </span
+                      ><img
+                        src="./assets/images/plus-lg.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <span class="content"
+                      >Since Bitlearn is a bitcoin only education platform we
+                      are using the lightning network(layer 2) on bitcoin to
+                      recive payments</span
+                    >
+                    <div class="screen"></div>
+                  </div>
+                  <!-- //////////// -->
+                </div>
+              </div>
+              <!-- //////////// -->
+              <a href="./fourm-page.php" class="see-more-BTN">
+                <span>Join the conversation</span>
+                <img src="./assets/images/arrow-right-short.svg" alt=""
+              /></a>
+            </div>
+
+            <div class="img">
+              <img
+                src="./assets/images/forumVectorImage.jpeg"
+                alt="Image of a group of people to give perspective on what this section is about"
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <!-- second container-->
+          <!-- third container-->
+          <div class="service-container">
+            <div class="text">
+              <span class="service-kind">Current News</span>
+              <span class="service-title"
+                >Don't skip a best in the bitcoin industy</span
+              >
+              <span class="service-description"
+                >Bitcion is changing everyday so never miss an important event
+                using our current news page!</span
+              >
+              <!-- ////////// -->
+              <div class="service-info-drop">
+                <div class="drop-info-container">
+                  <!-- ///////////// -->
+                  <div class="drop-info">
+                    <div class="title">
+                      <span>Can I chose what to see? </span
+                      ><img
+                        src="./assets/images/plus-lg.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <span class="content"
+                      >You can select from our 4 main presets. After that you
+                      can clear those and use the search bar to find what you
+                      want.</span
+                    >
+                    <div class="screen"></div>
+                  </div>
+                  <!-- //////////// -->
+                  <div class="drop-info">
+                    <div class="title">
+                      <span> How are the articles found? </span
+                      ><img
+                        src="./assets/images/plus-lg.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <span class="content"
+                      >Bitlearn uses an api that has access to all headlines
+                      across the web. However, we filter only for the most
+                      popular news sites in order to limit junk articels.
+                    </span>
+                    <div class="screen"></div>
+                  </div>
+                  <!-- //////////// -->
+                  <!-- <div class="drop-info">
+                    <div class="title">
+                      <span> How are the courses made? </span
+                      ><img
+                        src="./assets/images/plus-lg.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <span class="content"
+                      >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Repudiandae maiores atque excepturi. Impedit, numquam
+                      voluptatibus. Quasi aut laborum minima itaque iusto ipsam,
+                      numquam cupiditate obcaecati reprehenderit illum labore,
+                      id quod.</span
+                    >
+                    <div class="screen"></div>
+                  </div> -->
+                  <!-- //////////// -->
+                </div>
+              </div>
+              <!-- //////////// -->
+              <a href="./news-page.html" class="see-more-BTN">
+                <span>Get news</span>
+                <img src="./assets/images/arrow-right-short.svg" alt=""
+              /></a>
+            </div>
+
+            <div class="img">
+              <img
+                src="./assets/images/newsVectorImage.jpeg"
+                alt="Image of a news paper to give perspective on what this section is about"
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <!-- third container-->
+        </div>
+      </section>
+
+      <!-- ///////////////// -->
+
+      <section class="what-we-believe">
+        <div class="what-we-believe-container">
+          <div class="right">
+            <span class="main">
+              We believe learning should be simple and its impact should be big.
+            </span>
+            <span class="description"
+              >Let’s make that a reality for you. Here’s how.</span
+            >
+          </div>
+          <div class="options">
+            <!-- //////// -->
+            <div class="option">
+              <div class="top">
+                <img src="./assets/images/check.png" alt="" />
+                <span class="title">Put the learner first</span>
+              </div>
+
+              <span class="bottom"
+                >At Bitlearn we belive that all voices should be heard. That is
+                why our resources are generated by the community. Be sure to
+                think critically when reading them as anyone can post.
+              </span>
+              <a href="./all-resource-page.html"><div class="screen"></div></a>
+            </div>
+            <!-- //////// -->
+            <!-- //////// -->
+            <div class="option">
+              <div class="top">
+                <img src="./assets/images/check.png" alt="" />
+                <span class="title">Consolidate information</span>
+              </div>
+              <span class="bottom"
+                >Let's face it, it's hard to learn about bitcoin. But, luckily
+                for you we have created a bitcoin only website to help you get
+                started. From blog posts, to resources and news, Bitlearn is
+                your one stop shop.</span
+              >
+              <a href="./all-resource-page.html"><div class="screen"></div></a>
+            </div>
+            <!-- //////// -->
+            <!-- //////// -->
+            <div class="option">
+              <div class="top">
+                <img src="./assets/images/check.png" alt="" />
+                <span class="title">Drive results through community</span>
+              </div>
+              <span class="bottom"
+                >Conversations are everything when it comes to learning. Hop
+                into the fourm page, learn how to use the lightning network to
+                pay your post fee, and join the conversation.</span
+              >
+              <a href="./fourm-page.php"><div class="screen"></div></a>
+            </div>
+            <!-- //////// -->
+          </div>
+        </div>
+        <!-- ///////// -->
+        <div class="moving-ball"></div>
+        <!-- ///////// -->
+      </section>
+
+      <section class="call-to-action-bottom">
+        <div class="title">
+          Start your learning jouney today on what impacts the world
+        </div>
+        <span class="call-to-action-BTN">Sign up for free</span>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="./assets/images/bitconEducationLogo.png" alt="Bitlearn"
+          /></a>
+        </div>
+        <div class="to-questions list-container">
+          <span class="title"> Bitlearn </span>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="./fourm-page.php">Questoins</a>
+            </li>
+            <li class="footer-item"><a href="./news-page.html">News</a></li>
+            <li class="footer-item">
+              <a href="./under-construction.html">Education</a>
+            </li>
+            <li class="footer-item">
+              <a href="./fourm-page.php">Fourm</a>
+            </li>
+          </ul>
+        </div>
+        <div class="company list-container">
+          <span class="title"> Company </span>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="./company-pages/about-us.html">About</a>
+            </li>
+            <li class="footer-item"><a href="./help.html">Help</a></li>
+            <li class="footer-item">
+              <a href="./under-construction.html">Privacy Policy</a>
+            </li>
+            <li class="footer-item">
+              <a href="./under-construction.html">Terms of Service</a>
+            </li>
+            <li class="footer-item">
+              <a href="./under-construction.html">Privacy Polict</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social list-container">
+          <div class="top">
+            <ul class="social-list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="bottom">
+            <span>Copyright © 2023 Bitlearn All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://mempool.space/mempool.js"></script>
+    <script src="./javaScript/navbar.js"></script>
+    <script src="./javaScript/moving-ball.js"></script>
+    <script src="./javaScript/changing-main-back-img.js"></script>
+    <script src="./javaScript/what-we-belive.js"></script>
+    <script src="./javaScript/our-services-content-display.js"></script>
+  </body>
+</html>

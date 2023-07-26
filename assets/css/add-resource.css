@@ -1,0 +1,227 @@
+main {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.backBTN {
+  height: 50px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #f7931a;
+  box-shadow: 0 0 10px 0 rgb(180, 180, 180);
+  color: white;
+  cursor: pointer;
+}
+/* ////////// */
+main .intro-text {
+  width: 95%;
+  max-width: 900px;
+  text-align: center;
+
+  margin: 50px auto 0;
+}
+main .intro-text h1 {
+  font-size: min(35px, 5vw);
+}
+/* ////////// */
+
+main .post-form {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+main .post-form .input-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  padding: 20px;
+  border: 1px solid rgb(195, 195, 195);
+  box-shadow: 0 0 1px 0 rgb(201, 201, 201);
+  border-radius: 5px;
+}
+main .post-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+main .post-form input,
+select,
+.resource-content {
+  width: 100%;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 5px;
+
+  margin: 10px 0;
+  resize: none;
+  padding: 10px;
+}
+main .post-form .resource-content {
+  height: 300px;
+}
+main .post-form .charector-count {
+  margin-left: auto;
+}
+
+main .post-form .submit-form-BTN-span {
+  width: max-content;
+  padding: 15px 20px;
+  background-color: #f7931a;
+  box-shadow: 0 0 5px 0 rgb(201, 201, 201);
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+}
+
+main .post-form .annoymous-container {
+  width: 100%;
+  max-width: 125px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+main .post-form .annoymous-container input {
+  width: max-content;
+  margin-left: 10px;
+}
+main .post-form .annoymous-container > * {
+  margin: 0;
+}
+
+/* quill stying */
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  margin-bottom: 10px;
+  height: 400px;
+}
+.ql-toolbar.ql-snow {
+  margin-top: 20px;
+}
+
+/* img preveiw station */
+.preview-file-showcase {
+  width: 200px;
+  max-width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  transition: all 0.5s;
+}
+.preview-file-showcase img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.preview-file-showcase .message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.preview-options {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto 20px;
+}
+.preview-options span {
+  width: max-content;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 0 0 0 rgb(201, 201, 201);
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.preview-options .active-option {
+  background-color: #f7931a;
+  box-shadow: 0 0 5px 0 rgb(201, 201, 201);
+  color: white;
+}
+
+/* adding questions styling */
+.all-questions-container {
+  display: flex;
+  flex-direction: column;
+}
+.all-questions-container span:first-child {
+  display: flex;
+  align-items: center;
+}
+.question-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.question-container .answers {
+  width: 98%;
+  margin-left: auto;
+}
+/* answer container */
+.question-container .answers .answer-container {
+  width: 100%;
+
+  position: relative;
+}
+.question-container .answers .answer-container:hover .options-container {
+  display: flex;
+}
+.question-container .answers .answer-container .options-container {
+  width: 300px;
+  height: 80px;
+
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -95%);
+
+  background-color: white;
+
+  border-radius: 18px;
+  border: 1px solid black;
+
+  padding: 10px;
+
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.question-container .answers .answer-container .options-container > * {
+  cursor: pointer;
+}
+.question-container .answers .correct-answer {
+  border: 1px solid rgb(41, 188, 41);
+
+  color: rgb(41, 188, 41);
+}
+.question-container .answers .correct-answer::placeholder {
+  color: rgb(41, 188, 41);
+}
+
+/* answer container */
+.question-container .add-answer {
+  cursor: pointer;
+  margin: 10px 0 10px auto;
+}
+.add-question {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.remove-question {
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}

@@ -1,0 +1,60 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background gradient styling */
+  background: rgb(247, 147, 26);
+  background: -moz-radial-gradient(
+    top,
+    rgba(247, 147, 26, 1) 27%,
+    rgba(176, 233, 148, 1) 81%
+  );
+  background: -webkit-radial-gradient(
+    top,
+    rgba(247, 147, 26, 1) 27%,
+    rgba(176, 233, 148, 1) 81%
+  );
+  background: radial-gradient(
+    top,
+    rgba(247, 147, 26, 1) 27%,
+    rgba(176, 233, 148, 1) 81%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7931a",endColorstr="#b0e994",GradientType=1);
+  /* background gradient styling */
+}
+main .text-container {
+  width: 95%;
+  max-width: 1000px;
+  height: 400px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 1px solid gainsboro; */
+  box-shadow: 0 0 10px 0 gainsboro;
+  background-color: rgba(220, 220, 220, 0.192);
+  border-radius: 20px;
+  padding: 20px;
+}
+main .text-container span:first-child {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+main .text-container span:last-child {
+  font-size: 20px;
+
+  text-align: center;
+}
+main .text-container a {
+  font-size: 20px;
+  color: white;
+
+  text-align: center;
+}
